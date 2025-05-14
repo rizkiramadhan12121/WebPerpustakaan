@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Perpustakaan Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#collection">Koleksi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="banner">
+            <h1>Welcome <br> Perpustakaan<br><span class="spanclass">Digital</span></h1>
+            <a href="#collection" class="btn">Jelajahi Koleksi</a>
+        </div>
+
+       
+    </section>
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Perpustakaan Digital menyediakan berbagai koleksi buku digital yang dapat diakses dengan mudah oleh siapa saja.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Perpustakaan Digital. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        background: #f5f5f5;
+    }
+
+    .banner {
+    background-image: url('image/perpus.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.banner .spanclass{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.banner span {
+    font-style: italic;
+}
+
+    header {
+        background: #2C3E50;
+        color: white;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    nav ul li a:hover {
+        color: #00ccff;
+    }
+    .hero {
+        color: white;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: #2C3E50;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background 0.3s;
+    }
+    .btn:hover {
+        background: #254647;
+    }
+    .about {
+        padding: 80px 20px;
+        background: white;
+        max-width: 800px;
+        margin: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    footer {
+        background: #2C3E50;
+        color: white;
+        padding: 20px;
+        margin-top: 50px;
+    }
+</style>
+
+<!-- <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar dengan Dropdown</title>
+</head>
+<body>
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-lg font-bold">Logo</a>
+            <ul class="flex space-x-6">
+                <li class="relative group">
+                    <a href="#" class="text-white hover:text-gray-300">Menu</a>
+                    <ul class="absolute left-0 hidden group-hover:block bg-white shadow-lg py-2 w-40">
+                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Submenu 1</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Submenu 2</a></li>
+                        <li class="relative group">
+                            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Submenu 3 ▶</a>
+                            <ul class="absolute left-full top-0 hidden group-hover:block bg-white shadow-lg py-2 w-40">
+                                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Submenu 3.1</a></li>
+                                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Submenu 3.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="text-white hover:text-gray-300">Tentang</a></li>
+                <li><a href="#" class="text-white hover:text-gray-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html> -->

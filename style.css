@@ -1,0 +1,45 @@
+.banner {
+    background-image: url('image/perpus.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.banner .spanclass{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.banner span {
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #2C3E50;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #254647;
+}
